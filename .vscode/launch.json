@@ -33,7 +33,8 @@
   "compounds": [
     {
       "name": "Run",
-      "configurations": ["Launch via NPM", "Launch Chrome"]
+      "configurations": ["Launch via NPM", "Launch Chrome"],
+      "stopAll": true
     }
   ]
 }
