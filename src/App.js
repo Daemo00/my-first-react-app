@@ -2,7 +2,15 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 function Square({value}) {
-  return <button className="square">{value}</button>;
+  function handleClick() {
+    console.log('clicked!');
+  }
+  return <button
+    className="square"
+    onClick={handleClick}
+  >
+    {value}
+  </button>;
 }
 Square.propTypes = {
   value: PropTypes.string.isRequired,
